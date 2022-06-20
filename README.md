@@ -2,7 +2,7 @@
 On this repository, I'll be documenting my learning process of SwiftUI.
 
 # Where am I learning Swift UI from?
-I would be learning from the free course by paul Hudson, you can find the link below
+I would be learning from the free course by paul Hudson, you can find the link ->
 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui)
 
 # Projects
