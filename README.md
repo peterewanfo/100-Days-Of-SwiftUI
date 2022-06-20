@@ -6,5 +6,5 @@ I would be learning from the free course by paul Hudson, you can find the link b
 [100 Days Of SwiftUI](https://www.hackingwithswift.com/100/swiftui)
 
 # Projects
-- [Project 1 - WeSplit](./project-01-wesplit)
+- [Project 1 - WeSplit](./Project-01-WeSplit)
 - [Day 16 - 100DaysOfSwiftUI](https://www.hackingwithswift.com/100/swiftui/16)
