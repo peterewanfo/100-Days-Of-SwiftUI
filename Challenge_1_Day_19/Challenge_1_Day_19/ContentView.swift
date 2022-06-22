@@ -95,7 +95,7 @@ struct ContentView: View {
                 }
                 
                 Section{
-                    Text("RESULT =  \(conversionResult) \(outputUnit.lowercased())")
+                    Text("\(inputValue) \(inputUnit.lowercased()) =  \(conversionResult) \(outputUnit.lowercased())")
                 }header: {
                     Text("RESULT")
                 }
