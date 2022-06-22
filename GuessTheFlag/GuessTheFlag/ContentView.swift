@@ -46,7 +46,9 @@ struct ContentView: View {
                     }
                     ForEach(0..<3){ number in
                         Button{
-                            flagTapped(number)
+                            gameTrialCount += 1
+                            
+                            flagTapped(number, isLastTrial: gameTrialCount == 8)
                         } label: {
                             Image(countries[number])
                                 .renderingMode(.original)
@@ -84,14 +86,16 @@ struct ContentView: View {
         }
     }
     
-    func flagTapped(_ number: Int){
+    func flagTapped(_ number: Int, isLastTrial:Bool){
+        
         selectedCountry = number
         if number == correctAnswer{
-            scoreTitle = "Correct"
+            scoreTitle = isLastTrial ? "Last Trial: Correct" : "Correct"
             score += 1
             
         }else{
-            scoreTitle = "Wrong! That's the flag of \(countries[selectedCountry])"
+            let errorExplanation = "That's the flag of \(countries[selectedCountry])"
+            scoreTitle =  isLastTrial ? "Last Trial: Wrong, \(errorExplanation)" :"Wrong! \(errorExplanation)"
             score -= 1
         }
         showingScore = true
