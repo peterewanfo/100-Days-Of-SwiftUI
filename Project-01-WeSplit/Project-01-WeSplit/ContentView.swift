@@ -58,6 +58,7 @@ struct ContentView: View {
                 Section{
                     Text(totalPerPerson, format:
                         .currency(code: Locale.current.currencyCode ?? "NGN"))
+                        .foregroundColor(totalPerPerson.isZero ? .red : .green)
                 }
             }
             .navigationTitle("WeSplit")
@@ -81,6 +82,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ZStack{
+            ContentView()
+        }
     }
 }
